@@ -1,22 +1,34 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
+ }
  .container{
     height: 500px; 
     width: 600px;
-     margin: 50px auto;
+     margin: 70px auto;
      border: 1px solid black;
+    
  }
  h1{
     text-align: center;
      font-family: sans-serif;
       font-weight: 200;
+      font-size: 32px;
+      margin-top: 8px;
+      color: rgb(195, 0, 255);
  }
   .input{
-    border: 1px solid red;
+     padding: 5px;
      margin-bottom: 5px;
+     margin-top: 5px;
   }
    .input .desc{
      display: block;
      width: 100%; 
      height: 40px;
+    
    
    }
    .input .insideContainer{
@@ -25,23 +37,88 @@
    }
     .input .category{
         width: 50%;
-        height: 30px;
+        height: 35px;
     }
      .input .date{
         width: 50%;; 
-        height: 30px;
+        height: 35px;
       
      }
 
    .result{
      border: 1px solid black;
    }
-    .btn{
+    .btnAdd{
         
-        height: 20px;
-        width: 100px;
+        height: 30px;
+        width: 120px;
         background-color: rgba(18, 15, 15, 0.4);
         color: white; 
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 220px;
+        font-size: 16px;
         
     }
+    .resultContainer{
+      display: flex;
+      border: 1px solid black ;
+    }
+    
+    
+    .item{
+     
+      height: 80px;
+      width: 85%;
+      position: relative;
+    }
+    .item .desc {
+      margin-top: 15px;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    .item .date{
+      margin-top: 5px;
+      font-size: 15px;
+      margin-left: 5px;
+    }
+    .label{
+      border: 1px solid black;
+      height: 35px;
+      width: 90px;
+       background-color: rgba(105, 23, 111, 0.695);
+       position: absolute; 
+       left: 400px;
+       bottom: 24px;
 
+
+    }
+    .label p { 
+      color: black;
+      text-align: center;
+      margin: 7px auto;
+    }
+   
+    .checkbox{
+      width: 5%;
+
+    }
+    .checkbox input{
+      width: 25px;
+      height: 25px;
+      margin-top: 15px;
+    }
+    .delete{
+      position: absolute; 
+      left: 520px;
+     bottom : 35px; 
+      font-size: 20px;
+     
+    }
+    .delete i{
+      color: brown;
+    }
+    .delete i:hover{
+      color: rgb(25, 3, 3);
+    }
+    
